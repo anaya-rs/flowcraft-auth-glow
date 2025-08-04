@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 
 const Login = () => {
@@ -24,33 +24,27 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen gradient-background flex items-center justify-center p-4">
+    <div className="min-h-screen gradient-background-dark flex items-center justify-center p-4 dark">
       <div className="w-full max-w-md">
-        {/* Header with Logo */}
+        {/* Page Header */}
         <div className="text-center mb-8">
-          <div className="mx-auto w-20 h-20 gradient-orange rounded-full flex items-center justify-center mb-6 shadow-lg">
-            <span className="text-2xl font-bold text-white">FC</span>
-          </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">FlowCraft AI</h1>
-          <p className="text-gray-600">Sign in to your account</p>
+          <h1 className="text-4xl font-bold text-white mb-2">Welcome to FlowCraft AI</h1>
+          <p className="text-gray-300">Sign in to access your account</p>
         </div>
 
-        {/* Glassmorphism Login Card */}
-        <Card className="glass-card shadow-2xl border-0">
+        {/* Glass-morphic Login Card */}
+        <Card className="glass-card-dark shadow-2xl border-0">
           <CardHeader className="space-y-1 pb-6">
-            <CardTitle className="text-2xl font-semibold text-center text-gray-900">
-              Welcome Back
+            <CardTitle className="text-2xl font-semibold text-center text-white">
+              Sign In
             </CardTitle>
-            <CardDescription className="text-center text-gray-600">
-              Enter your credentials to access your account
-            </CardDescription>
           </CardHeader>
           
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Email Field */}
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium text-gray-700">
+                <Label htmlFor="email" className="text-sm font-medium text-white">
                   Email Address
                 </Label>
                 <div className="relative">
@@ -61,15 +55,16 @@ const Login = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="pl-10 h-12 rounded-xl border-gray-200 focus-ring-orange bg-white/70 backdrop-blur-sm"
+                    className="pl-10 h-12 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-400 focus-ring-orange focus:border-primary"
                     required
+                    aria-label="Email address"
                   />
                 </div>
               </div>
 
               {/* Password Field */}
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-sm font-medium text-gray-700">
+                <Label htmlFor="password" className="text-sm font-medium text-white">
                   Password
                 </Label>
                 <div className="relative">
@@ -80,13 +75,15 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter your password"
-                    className="pl-10 pr-10 h-12 rounded-xl border-gray-200 focus-ring-orange bg-white/70 backdrop-blur-sm"
+                    className="pl-10 pr-10 h-12 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-400 focus-ring-orange focus:border-primary"
                     required
+                    aria-label="Password"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-300 transition-colors"
+                    aria-label={showPassword ? "Hide password" : "Show password"}
                   >
                     {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                   </button>
@@ -107,7 +104,7 @@ const Login = () => {
               <Button
                 type="submit"
                 disabled={isLoading || !email || !password}
-                className="w-full h-12 gradient-orange hover:gradient-orange-hover text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full h-12 gradient-orange hover:gradient-orange-hover text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="flex items-center gap-2">
@@ -121,7 +118,7 @@ const Login = () => {
             </form>
 
             {/* Additional Links */}
-            <div className="mt-6 text-center text-sm text-gray-600">
+            <div className="mt-6 text-center text-sm text-gray-300">
               Don't have an account?{" "}
               <Link
                 to="/signup"
@@ -134,7 +131,7 @@ const Login = () => {
         </Card>
 
         {/* Footer */}
-        <div className="mt-8 text-center text-xs text-gray-500">
+        <div className="mt-8 text-center text-xs text-gray-400">
           <p>© 2024 FlowCraft AI. All rights reserved.</p>
         </div>
       </div>
