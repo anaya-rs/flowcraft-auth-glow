@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen gradient-background-dark flex items-center justify-center p-4 dark">
+    <div className="min-h-screen gradient-background-dark flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Page Header */}
         <div className="text-center mb-8">
