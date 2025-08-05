@@ -8,9 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* FlowCraft AI Orange Brand Colors */
-    --primary: 22 100% 52%; /* #FF7700 */
-    --primary-light: 28 100% 63%; /* #FFA348 */
+    /* Pink-Orange Brand Colors */
+    --primary: 15 85% 60%; /* Pink-Orange */
+    --primary-light: 25 90% 70%; /* Lighter Pink-Orange */
     --primary-foreground: 0 0% 100%;
     
     /* Background gradients */
@@ -77,18 +77,18 @@ All colors MUST be HSL.
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 100%;
 
-    /* Keep orange primary for dark mode */
-    --primary: 22 100% 52%; /* #FF7700 */
-    --primary-light: 28 100% 63%; /* #FFA348 */
+    /* Pink-Orange primary for dark mode */
+    --primary: 15 85% 60%; /* Pink-Orange */
+    --primary-light: 25 90% 70%; /* Lighter Pink-Orange */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 25%; /* Darker grey */
+    --secondary-foreground: 0 0% 85%; /* Light grey text */
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 75%; /* gray-300 */
+    --muted: 0 0% 15%; /* Dark muted */
+    --muted-foreground: 0 0% 65%; /* Medium grey */
 
-    --accent: 22 100% 52%;
+    --accent: 15 85% 60%; /* Pink-Orange accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -97,7 +97,7 @@ All colors MUST be HSL.
     /* Dark mode borders and inputs */
     --border: 0 0% 20%; /* #333 */
     --input: 0 0% 16%; /* #2A2A2A */
-    --ring: 22 100% 52%; /* Orange focus ring */
+    --ring: 15 85% 60%; /* Pink-Orange focus ring */
 
     /* Glass effect for dark mode */
     --glass-dark: 0 0% 100% / 0.08;
