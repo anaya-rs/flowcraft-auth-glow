@@ -8,15 +8,15 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Pink-Orange Brand Colors */
-    --primary: 15 85% 60%; /* Pink-Orange */
-    --primary-light: 25 90% 70%; /* Lighter Pink-Orange */
+    /* Vibrant Pink-Orange Brand Colors (Lovable style) */
+    --primary: 15 100% 65%; /* Bright Pink-Orange #FF5722 */
+    --primary-light: 25 100% 75%; /* Vibrant Light Orange #FF9800 */
     --primary-foreground: 0 0% 100%;
     
     /* Background gradients */
     --background: 0 0% 100%;
-    --background-secondary: 30 20% 98%;
-    --background-peach: 25 50% 95%;
+    --background-secondary: 25 25% 98%;
+    --background-peach: 20 60% 96%;
     --foreground: 222.2 84% 4.9%;
 
     /* Card and glass effects */
@@ -34,7 +34,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 22 100% 52%;
+    --accent: 15 100% 65%; /* Vibrant Pink-Orange */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -42,7 +42,7 @@ All colors MUST be HSL.
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 22 100% 52%;
+    --ring: 15 100% 65%; /* Vibrant Pink-Orange focus ring */
 
     --radius: 0.5rem;
 
@@ -64,40 +64,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Deep space blue to charcoal gradient backgrounds */
-    --background: 210 100% 4%; /* #0B1120 */
-    --background-dark: 216 16% 12%; /* #1A1B23 */
+    /* Deep space backgrounds with vibrant accents */
+    --background: 220 26% 6%; /* Deep navy #0F172A */
+    --background-dark: 220 25% 10%; /* Rich dark blue #1E293B */
     --foreground: 0 0% 100%;
 
-    /* Enhanced dark card styles with blue undertones */
-    --card: 210 100% 4%;
+    /* Enhanced dark card styles */
+    --card: 220 26% 6%;
     --card-foreground: 0 0% 100%;
-    --card-dark: 217 13% 12%; /* #1E1F26 */
+    --card-dark: 220 23% 11%; /* #1F2937 with blue undertones */
 
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 100%;
 
-    /* Electric blue and vibrant orange accents */
-    --primary: 213 94% 68%; /* Electric blue #3B82F6 */
-    --primary-light: 20 91% 56%; /* Vibrant orange #F97316 */
+    /* Vibrant brand colors for dark mode */
+    --primary: 15 100% 65%; /* Vibrant Pink-Orange #FF5722 */
+    --primary-light: 25 100% 75%; /* Bright Orange #FF9800 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 98%; /* Light gray for contrast */
-    --secondary-foreground: 217 13% 12%; /* Dark text */
+    --secondary: 220 20% 15%; /* Rich dark gray */
+    --secondary-foreground: 0 0% 90%; /* Light text */
 
-    --muted: 217 13% 12%; /* Dark muted matching card-dark */
-    --muted-foreground: 215 20% 65%; /* Soft gray #9CA3AF */
+    --muted: 220 23% 11%; /* Dark muted matching card */
+    --muted-foreground: 220 9% 65%; /* Soft blue-gray */
 
-    --accent: 158 64% 52%; /* Mint green #10B981 */
+    --accent: 270 100% 70%; /* Vibrant purple #A855F7 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Enhanced dark mode borders and inputs */
-    --border: 217 13% 20%; /* Enhanced border with blue undertone */
-    --input: 217 13% 12%; /* Matching card-dark for consistency */
-    --ring: 213 94% 68%; /* Electric blue focus ring */
+    /* Enhanced borders and inputs */
+    --border: 220 23% 18%; /* Subtle border */
+    --input: 220 23% 11%; /* Dark input background */
+    --ring: 15 100% 65%; /* Vibrant Pink-Orange focus ring */
 
     /* Glass effect for dark mode */
     --glass-dark: 0 0% 100% / 0.08;
@@ -140,16 +140,16 @@ All colors MUST be HSL.
     @apply backdrop-blur-lg border border-white/10 shadow-2xl;
   }
   
-  /* Blue to orange gradient utilities */
+  /* Vibrant gradient utilities */
   .gradient-orange {
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
   }
   
   .gradient-orange-hover {
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--primary-light) / 0.9));
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.95));
   }
   
-  /* Dark charcoal gradient background */
+  /* Vibrant dark gradient backgrounds */
   .gradient-background-dark {
     background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-dark)));
   }
@@ -158,7 +158,7 @@ All colors MUST be HSL.
     background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--background-peach)));
   }
   
-  /* Focus ring utilities */
+  /* Vibrant focus ring utilities */
   .focus-ring-orange {
     @apply focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none;
   }
