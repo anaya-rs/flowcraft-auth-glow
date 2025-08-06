@@ -40,9 +40,11 @@ const Index = () => {
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </Link>
-            <Button variant="outline" className="px-8 py-3 rounded-xl font-semibold text-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all bg-transparent">
-              Learn More
-            </Button>
+            <Link to="/learn-more">
+              <Button variant="outline" className="px-8 py-3 rounded-xl font-semibold text-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all bg-transparent">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
 

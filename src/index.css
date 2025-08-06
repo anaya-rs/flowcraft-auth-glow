@@ -64,40 +64,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark charcoal background */
-    --background: 0 0% 7%; /* #121212 */
-    --background-dark: 0 0% 12%; /* #1F1F1F */
+    /* Deep space blue to charcoal gradient backgrounds */
+    --background: 210 100% 4%; /* #0B1120 */
+    --background-dark: 216 16% 12%; /* #1A1B23 */
     --foreground: 0 0% 100%;
 
-    /* Dark card styles */
-    --card: 0 0% 7%;
+    /* Enhanced dark card styles with blue undertones */
+    --card: 210 100% 4%;
     --card-foreground: 0 0% 100%;
-    --card-dark: 0 0% 16%; /* #2A2A2A */
+    --card-dark: 217 13% 12%; /* #1E1F26 */
 
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 100%;
 
-    /* Pink-Orange primary for dark mode */
-    --primary: 15 85% 60%; /* Pink-Orange */
-    --primary-light: 25 90% 70%; /* Lighter Pink-Orange */
+    /* Electric blue and vibrant orange accents */
+    --primary: 213 94% 68%; /* Electric blue #3B82F6 */
+    --primary-light: 20 91% 56%; /* Vibrant orange #F97316 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 25%; /* Darker grey */
-    --secondary-foreground: 0 0% 85%; /* Light grey text */
+    --secondary: 210 40% 98%; /* Light gray for contrast */
+    --secondary-foreground: 217 13% 12%; /* Dark text */
 
-    --muted: 0 0% 15%; /* Dark muted */
-    --muted-foreground: 0 0% 65%; /* Medium grey */
+    --muted: 217 13% 12%; /* Dark muted matching card-dark */
+    --muted-foreground: 215 20% 65%; /* Soft gray #9CA3AF */
 
-    --accent: 15 85% 60%; /* Pink-Orange accent */
+    --accent: 158 64% 52%; /* Mint green #10B981 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Dark mode borders and inputs */
-    --border: 0 0% 20%; /* #333 */
-    --input: 0 0% 16%; /* #2A2A2A */
-    --ring: 15 85% 60%; /* Pink-Orange focus ring */
+    /* Enhanced dark mode borders and inputs */
+    --border: 217 13% 20%; /* Enhanced border with blue undertone */
+    --input: 217 13% 12%; /* Matching card-dark for consistency */
+    --ring: 213 94% 68%; /* Electric blue focus ring */
 
     /* Glass effect for dark mode */
     --glass-dark: 0 0% 100% / 0.08;
@@ -140,7 +140,7 @@ All colors MUST be HSL.
     @apply backdrop-blur-lg border border-white/10 shadow-2xl;
   }
   
-  /* Orange gradient utilities */
+  /* Blue to orange gradient utilities */
   .gradient-orange {
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
   }
