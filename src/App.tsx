@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import CreateModel from "./pages/CreateModel";
 import LearnMore from "./pages/LearnMore";
+import DocumentView from "./pages/DocumentView";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/learn-more" element={<LearnMore />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/create-model" element={<CreateModel />} />
+            <Route path="/documents/view/:documentId" element={<DocumentView />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
